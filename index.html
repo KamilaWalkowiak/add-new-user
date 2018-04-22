@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>people app</title>
+    <style>
+        .people > div {
+            display: inline-block;
+            width: 20%
+        }
+
+        #records > div > div {
+            display: inline-block;
+            width: 20%
+        }
+    </style>
 </head>
 <body>
+
+<div class="container">
+    <div>
+        <input id="inputName" placeholder="imię">
+    </div>
+    <div>
+        <input id="inputSurname" value="Snow" placeholder="nazwisko">
+    </div>
+    <div>
+        <input id="inputAge" placeholder="wiek">
+    </div>
+    <div>
+        <input id="inputRole" placeholder="rola">
+    </div>
+                <button id="addButton"></button>
+</div>
+<div class="people">
+    <div class="people__name people__name__head">
+Imię
+    </div>
+    <div class="people__surname people__surname__head">
+Nazwisko
+    </div>
+    <div class="people__age people__age__head">
+Wiek
+    </div>
+    <div class="people__role people__role__head">
+Rola
+    </div>
+</div>
+<div id="records">
+
+</div>
+
+
 <script src="script.js"></script>
 </body>
 </html>
