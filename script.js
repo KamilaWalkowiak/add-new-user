@@ -67,8 +67,6 @@ Render.prototype.addClick = function() {
     });
 };
 
-
-
 // Create object of PersonDB
 var dbInstance = new PersonDB();
 
