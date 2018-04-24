@@ -37,11 +37,11 @@ function Render(container, button, inputName, inputSurname, inputAge, inputRole)
 };
 
 Render.prototype.renderRow = function(name, surname, age, role, index) {
-    return '<div><div>' + name + '</div><div>' + surname + '</div><div>' + age + '</div><div>' + role + '</div><button onclick="dbInstance.removePerson('+index+')">Jednak lubię tą osobę</button></div>';
+    return '<div><div>' + name + '</div><div>' + surname + '</div><div>' + age + '</div><div>' + role + '</div><button onclick="dbInstance.removePerson('+index+')">remove user</button></div>';
 };
 
 Render.prototype.setHtml = function(database) {
-    this.container.innerHTML = '';
+    this.container.innerHTML = ''; //TODO clear input
     var self = this;
     database.map(function(person, index){
         self.container.innerHTML += self.renderRow(person.name, person.surname, person.age, person.role, index);
