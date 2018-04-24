@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>people app</title>
+    <style>
+        .people > div {
+            display: inline-block;
+            width: 20%
+        }
+
+        #records > div > div {
+            display: inline-block;
+            width: 20%
+        }
+    </style>
 </head>
 <body>
+<div id="container">
+    <div>
+        <input id="inputName" placeholder="name">
+    </div>
+    <div>
+        <input id="inputSurname" placeholder="surname">
+    </div>
+    <div>
+        <input id="inputAge" placeholder="age">
+    </div>
+    <div>
+        <input id="inputRole" placeholder="role">
+    </div>
+    <button id="addButton">add user</button>
+</div>
+<div class="people">
+    <div class="people__name people__name__head">
+        name
+    </div>
+    <div class="people__surname people__surname__head">
+        forname
+    </div>
+    <div class="people__age people__age__head">
+        age
+    </div>
+    <div class="people__role people__role__head">
+        role
+    </div>
+</div>
+<div id="records">
+</div>
 <script src="script.js"></script>
 </body>
 </html>
